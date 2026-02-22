@@ -4,7 +4,9 @@ import numpy as np
 from http.server import BaseHTTPRequestHandler
 
 # Load data once at startup
-DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'q-vercel-latency.json')
+DATA_PATH = os.path.join(os.path.dirname(__file__), 'q-vercel-latency.json')
+
+
 with open(DATA_PATH) as f:
     DATA = json.load(f)
 
